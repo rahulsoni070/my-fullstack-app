@@ -16,6 +16,10 @@ app.use(cors(corsOptions));
 app.use(express.json())
 app.use(cors());
 
+app.get("/", (req, res) => {
+  res.send("Backend running on Vercel!");
+});
+
 async function addNewBook(newBookData){
     try{
         const book = new Book(newBookData)
