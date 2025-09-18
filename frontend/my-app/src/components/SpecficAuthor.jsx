@@ -4,7 +4,7 @@
 import useFetch from "../useFetch";
 
 export default function SpecficAuthor({author}) {
-    const {data, loading, error} = useFetch(`http://localhost:4040/books/author/${author}`)
+    const {data, loading, error} = useFetch(`https://my-fullstack-app-lbmq.vercel.app/books/author/${author}`)
 
     console.log(data)
 

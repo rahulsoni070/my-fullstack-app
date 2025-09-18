@@ -23,7 +23,7 @@ const AddBook = () => {
     const handleSubmit = async (event) => {
         event.preventDefault()
         try {
-            const response = await fetch("http://localhost:4040/books",
+            const response = await fetch("https://my-fullstack-app-lbmq.vercel.app/books",
                 {
                     method: "POST",
                     headers: {

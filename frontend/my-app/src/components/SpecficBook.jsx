@@ -3,7 +3,7 @@
 import useFetch from "../useFetch";
 
 export default function SpecficBook({title}) {
-    const {data, loading, error} = useFetch(`http://localhost:4040/books/title/${title}`)
+    const {data, loading, error} = useFetch(`https://my-fullstack-app-lbmq.vercel.app/books/title/${title}`)
 
     console.log(data)
     
